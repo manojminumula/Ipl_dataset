@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ingestingdatafromgithub"
+		},
+		"GitHub1_credential": {
+			"value": ""
+		},
+		"ls_AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"ls_adf_to_adls_accountKey": {
+			"value": ""
+		},
+		"GitHub1_properties_typeProperties_username": {
+			"value": "naveenkodali3564"
+		},
+		"Http_raw_linked_service_properties_typeProperties_url": {
+			"value": "https://github.com/manojminumula/Ipl_dataset/blob/main/New_data.xlsx"
+		},
+		"ls_adf_to_adls_properties_typeProperties_url": {
+			"value": "https://alebraittargetdata.dfs.core.windows.net/"
+		}
+	}
+}
