@@ -7,29 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ingestingdatafromgithub"
 		},
-		"GitHub1_credential": {
-			"type": "secureString",
-			"metadata": "Secure string for 'credential' of 'GitHub1'"
-		},
 		"ls_AzureBlobStorage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_AzureBlobStorage'"
-		},
-		"ls_adf_to_adls_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ls_adf_to_adls'"
-		},
-		"GitHub1_properties_typeProperties_username": {
-			"type": "string",
-			"defaultValue": "naveenkodali3564"
-		},
-		"Http_raw_linked_service_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://github.com/manojminumula/Ipl_dataset/blob/main/New_data.xlsx"
-		},
-		"ls_adf_to_adls_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://alebraittargetdata.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -58,23 +38,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"GitHub1_credential": {
-						"value": "[parameters('GitHub1_credential')]"
-					},
 					"ls_AzureBlobStorage_connectionString": {
 						"value": "[parameters('ls_AzureBlobStorage_connectionString')]"
-					},
-					"ls_adf_to_adls_accountKey": {
-						"value": "[parameters('ls_adf_to_adls_accountKey')]"
-					},
-					"GitHub1_properties_typeProperties_username": {
-						"value": "[parameters('GitHub1_properties_typeProperties_username')]"
-					},
-					"Http_raw_linked_service_properties_typeProperties_url": {
-						"value": "[parameters('Http_raw_linked_service_properties_typeProperties_url')]"
-					},
-					"ls_adf_to_adls_properties_typeProperties_url": {
-						"value": "[parameters('ls_adf_to_adls_properties_typeProperties_url')]"
 					}
 				}
 			},
